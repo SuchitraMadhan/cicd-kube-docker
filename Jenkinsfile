@@ -62,7 +62,8 @@ pipeline {
                    -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/ \
                    -Dsonar.junit.reportsPath=target/surefire-reports/ \
                    -Dsonar.jacoco.reportsPath=target/jacoco.exec \
-                   -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml'''
+                   -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml \
+                   -X'''
                 }
 
                 timeout(time: 10, unit: 'MINUTES') {
